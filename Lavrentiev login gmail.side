@@ -1,0 +1,149 @@
+{
+  "id": "450c6079-02ad-49ba-93f9-c467b3c84cba",
+  "version": "2.0",
+  "name": "Lavrentiev/ login gmail",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "0e6e7693-3dfb-4d9b-84db-a35d194e81e3",
+    "name": "login",
+    "commands": [{
+      "id": "35232e66-95a4-4dfc-9f27-c198c1f2da31",
+      "comment": "",
+      "command": "open",
+      "target": "/intl/ru/gmail/about/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ed787c6-da11-462b-a6c3-fc47f19e4a6c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x559",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "123650f1-ba91-4fc8-bf32-b54bab8238dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=.button--mobile-before-hero-only", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser')]", "xpath:href"],
+        ["xpath=//div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d68cc4f0-610a-4c8e-b258-06feb3f76fac",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='yDmH0d']/c-wiz/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "d21647429"
+    }, {
+      "id": "fcda62e8-1ca9-44ac-a82d-086c58961233",
+      "comment": "",
+      "command": "click",
+      "target": "css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb",
+      "targets": [
+        ["css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb", "css:finder"],
+        ["xpath=//div[@id='identifierNext']/div/button/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6cffda1-5e74-4290-8d12-dd9fa512013b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb",
+      "targets": [
+        ["css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb", "css:finder"],
+        ["xpath=//div[@id='identifierNext']/div/button/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81a12121-2f0e-4c5a-9cbd-2801e5fd4b54",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb",
+      "targets": [
+        ["css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb", "css:finder"],
+        ["xpath=//div[@id='identifierNext']/div/button/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fea0629-898c-4569-9ecf-d2a3dd20589e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,31)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bc380af-5362-4fbe-bcda-a39cbf96e085",
+      "comment": "",
+      "command": "type",
+      "target": "name=Passwd",
+      "targets": [
+        ["name=Passwd", "name"],
+        ["css=#password .whsOnd", "css:finder"],
+        ["xpath=//input[@name='Passwd']", "xpath:attributes"],
+        ["xpath=//div[@id='password']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "qweasD/1"
+    }, {
+      "id": "958fdede-22c0-438b-988c-cbf4542caf7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb",
+      "targets": [
+        ["css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb", "css:finder"],
+        ["xpath=//div[@id='passwordNext']/div/button/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "342758f9-9fcb-4a12-a444-a5260405a654",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb",
+      "targets": [
+        ["css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb", "css:finder"],
+        ["xpath=//div[@id='passwordNext']/div/button/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b182b08d-5e92-4b1e-b938-a537f0a2ab3d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb",
+      "targets": [
+        ["css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-RLmnJb", "css:finder"],
+        ["xpath=//div[@id='passwordNext']/div/button/div[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/button/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "85b4963f-992f-4f18-88cf-9f11ad2f3163",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0e6e7693-3dfb-4d9b-84db-a35d194e81e3"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
